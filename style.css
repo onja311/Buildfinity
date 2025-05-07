@@ -51,3 +51,17 @@ button {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+.buttons button {
+    margin: 10px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+    background-color: #ff4500;
+}
