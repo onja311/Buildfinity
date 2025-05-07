@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buildfinity - Accueil</title>
+    <title>Buildfinity - Génération de devis</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,20 +11,20 @@
         <h1><span class="build">Build</span><span class="finity">finity</span></h1>
     </header>
 
-    <section class="intro">
-        <h2>Optimisez vos projets de construction avec Buildfinity!</h2>
-        <p>Créez des plans 2D, générez des devis instantanés et gérez vos abonnements.</p>
-        <div class="buttons">
-            <button class="start">Commencer</button>
-            <button class="plans">Voir les Plans</button>
-            <button class="subscribe">S’abonner</button>
-        </div>
-    </section>
+    <section class="devis">
+        <h2>Créer un devis</h2>
+        <form id="devisForm">
+            <label for="client">Nom du client:</label>
+            <input type="text" id="client" required>
 
-    <section class="dashboard">
-        <h2>Créer un Plan 2D</h2>
-        <canvas id="planCanvas"></canvas>
-        <button id="savePlan">Sauvegarder</button>
+            <label for="projet">Nom du projet:</label>
+            <input type="text" id="projet" required>
+
+            <label for="montant">Montant (€):</label>
+            <input type="number" id="montant" required>
+
+            <button type="button" id="generatePDF">Générer PDF</button>
+        </form>
     </section>
 
     <script src="script.js"></script>
