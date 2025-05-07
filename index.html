@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buildfinity - Génération de devis</title>
+    <title>Buildfinity - Devis automatique</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,8 +20,14 @@
             <label for="projet">Nom du projet:</label>
             <input type="text" id="projet" required>
 
-            <label for="montant">Montant (€):</label>
-            <input type="number" id="montant" required>
+            <label for="materiaux">Matériaux (€):</label>
+            <input type="number" id="materiaux" required>
+
+            <label for="mainOeuvre">Main d’œuvre (€):</label>
+            <input type="number" id="mainOeuvre" required>
+
+            <label for="autres">Autres coûts (€):</label>
+            <input type="number" id="autres" required>
 
             <button type="button" id="generatePDF">Générer PDF</button>
         </form>
