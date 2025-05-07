@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fff;
     text-align: center;
-    transition: background 0.3s ease-in-out;
 }
 
 header {
@@ -22,23 +21,30 @@ h1 {
     color: red;
 }
 
-.buttons button {
+.devis {
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
     margin: 10px;
-    padding: 15px;
+    width: 80%;
     font-size: 16px;
-    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
     border: none;
-    border-radius: 5px;
-    transition: transform 0.3s;
-}
-
-.buttons button:hover {
-    transform: scale(1.1);
-}
-
-canvas {
-    border: 2px solid #000;
-    background: white;
+    cursor: pointer;
 }
 
 @keyframes fadeIn {
