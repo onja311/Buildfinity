@@ -2,10 +2,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fff;
     text-align: center;
+    transition: background 0.3s ease-in-out;
 }
 
 header {
     padding: 20px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 h1 {
@@ -20,11 +22,6 @@ h1 {
     color: red;
 }
 
-.intro {
-    margin-top: 30px;
-    font-size: 18px;
-}
-
 .buttons button {
     margin: 10px;
     padding: 15px;
@@ -32,19 +29,19 @@ h1 {
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    transition: transform 0.3s;
 }
 
-.start {
-    background-color: #007BFF;
-    color: white;
+.buttons button:hover {
+    transform: scale(1.1);
 }
 
-.plans {
-    background-color: #28A745;
-    color: white;
+canvas {
+    border: 2px solid #000;
+    background: white;
 }
 
-.subscribe {
-    background-color: #FFC107;
-    color: white;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
